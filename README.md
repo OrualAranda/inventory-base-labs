@@ -1,4 +1,4 @@
-# Proyecto Inventario Backend
+# Proyecto Inventario
 
 ## Resumen de Ejecución
 
