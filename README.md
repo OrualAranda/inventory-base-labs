@@ -10,7 +10,7 @@ Cree una base de datos llamada **Inventory**.
 ### 2. Configure las Variables de Entorno
 En la raíz del proyecto, cree un archivo `.env` con las siguientes variables:
 
-```env
+*```
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
 DATABASE_USER=your_db_user
@@ -18,7 +18,7 @@ DATABASE_PASSWORD=your_db_password
 DATABASE_NAME=Inventory
 API_SERVER=localhost
 API_PORT=3000
-```
+```*
 
 ### 3. Instalar Dependencias
 En el directorio principal del proyecto, ejecute:
