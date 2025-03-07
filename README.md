@@ -10,7 +10,7 @@ Cree una base de datos llamada **Inventory**.
 ### 2. Configure las Variables de Entorno
 En la raíz del proyecto, cree un archivo `.env` con las siguientes variables:
 
-*```
+```
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
 DATABASE_USER=your_db_user
@@ -18,7 +18,7 @@ DATABASE_PASSWORD=your_db_password
 DATABASE_NAME=Inventory
 API_SERVER=localhost
 API_PORT=3000
-```*
+```
 
 ### 3. Instalar Dependencias
 En el directorio principal del proyecto, ejecute:
@@ -56,17 +56,18 @@ Booked: Piezas reservadas para órdenes aún no cumplidas.
 Missing: Piezas faltantes para completar todas las órdenes.
 Available: Piezas disponibles para nuevos pedidos.
 
-
-
 ## Tecnologías Utilizadas
+```
 Node.js: Entorno de ejecución para JavaScript del lado del servidor.
 Express: Framework web para Node.js.
 TypeScript: Superset de JavaScript para desarrollo más estructurado.
 TypeORM: ORM para trabajar con bases de datos relacionales en Node.js.
 PostgreSQL: Base de datos relacional.
 dotenv: Para gestionar las variables de entorno
+```
 
 ## Estructura de Carpetas
+```
 src/
 ├── config/            # Archivos de configuración global, como base de datos, servidores, etc.
 ├── controllers/       # Controladores que gestionan las solicitudes HTTP y las respuestas.
@@ -77,19 +78,22 @@ src/
 ├── routes/            # Rutas que definen las URL y los métodos HTTP asociados a los controladores.
 ├── services/          # Servicios que contienen la lógica de negocio de la aplicación.
 ├── utils/             # Funciones auxiliares utilizadas en diferentes partes de la aplicación.
+```
 
 ## Como Iniciar el Proyecto
 # 1. Clonar el repositorio
+```
    git clone https://github.com/OrualAranda/inventory-base-labs.git
    cd backend
-
+```
 # 2. Instalar dependencias
 Asegúrate de tener Node.js y npm instalados.
+```
    npm install
-
+```
 # 3. Configurar variables de entorno
 Crea un archivo .env en la raíz del proyecto basado en el siguiente ejemplo:
-```env
+```
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
 DATABASE_USER=your_db_user
@@ -101,23 +105,25 @@ API_PORT=3000
 
 # 4. Generar la base de datos
 Asegúrate de tener PostgreSQL instalado y corriendo. Usa TypeORM para sincronizar las entidades:
-
+```
 npm run typeorm migration:run
-
+```
 # 5. Iniciar el servidor
+```
   npm start
-
+```
 # 6. Ejecute la Semilla para Insertar los Datos en las Tablas
 Para insertar datos iniciales en las tablas, ejecute:
-
-`npm run seed`
-
+```
+npm run seed
+```
 El backend estará corriendo en http://localhost:3000/api
 
 ## Swagger - Documentación
 La documentación de la API se genera automáticamente con Swagger. Una vez que el servidor esté corriendo, puedes acceder a la documentación en:
+ ```
  http://localhost:3000/api/docs
-
+```
 Endpoints Disponibles
 # 1. GET /api/inventory/inventory-levels
    Devuelve una lista con los niveles de inventario calculados
