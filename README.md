@@ -23,13 +23,13 @@ API_PORT=3000
 ### 3. Instalar Dependencias
 En el directorio principal del proyecto, ejecute:
 
-`cd backend
+`cd inventory-base-labs
 npm install`
 
 ### 4. Ejecutar el Proyecto
 Inicie el backend:
 
-`cd backend
+`cd inventory-base-labs
 npm run dev`
 
 ### 5. Ejecute la Semilla para Insertar los Datos en las Tablas
